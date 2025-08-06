@@ -1,5 +1,5 @@
 // Birthday and date utilities
-const BIRTHDAY = new Date('1969-08-07T00:00:00');
+const BIRTHDAY = new Date('1968-08-07T00:00:00');
 const TODAY = new Date();
 
 // Golf facts array
@@ -16,18 +16,18 @@ const GOLF_FACTS = [
     "The green jacket awarded to Masters winners has been a tradition since 1949."
 ];
 
-// 1969 facts array
-const YEAR_1969_FACTS = [
-    "Apollo 11 landed on the moon on July 20, 1969 - just weeks before Dad was born!",
-    "Woodstock Music Festival took place in August 1969, the same month Dad was born!",
-    "The first episode of Scooby-Doo aired in 1969.",
-    "The Beatles released 'Abbey Road' in 1969, their final studio album.",
-    "ARPANET, the precursor to the internet, was established in 1969.",
-    "The first ATM in the United States was installed in 1969.",
-    "Sesame Street premiered on PBS in November 1969.",
-    "The Concorde supersonic jet made its first flight in 1969.",
-    "The movie 'Easy Rider' starring Dennis Hopper was released in 1969.",
-    "The New York Mets won their first World Series in 1969, earning the nickname 'Miracle Mets'."
+// 1968 facts array
+const YEAR_1968_FACTS = [
+    "Martin Luther King Jr. was assassinated on April 4, 1968, just months before Dad was born in August.",
+    "The Beatles released 'The White Album' in 1968, one of their most iconic double albums.",
+    "Apollo 8 became the first manned spacecraft to orbit the Moon in December 1968.",
+    "The movie '2001: A Space Odyssey' directed by Stanley Kubrick was released in 1968.",
+    "The first computer mouse was demonstrated publicly in 1968 by Douglas Engelbart.",
+    "The TV show 'Mister Rogers' Neighborhood' premiered in 1968.",
+    "The Ford Mustang 428 Cobra Jet was introduced in 1968 as a high-performance muscle car.",
+    "The Summer Olympics were held in Mexico City in 1968.",
+    "The movie 'Planet of the Apes' starring Charlton Heston was released in 1968.",
+    "Intel Corporation was founded in 1968 by Robert Noyce and Gordon Moore."
 ];
 
 // Dad jokes array
@@ -57,7 +57,7 @@ const hoursLivedElement = document.getElementById('hours-lived');
 const minutesLivedElement = document.getElementById('minutes-lived');
 const factDisplayElement = document.getElementById('fact-display');
 const golfFactsBtn = document.getElementById('golf-facts-btn');
-const year1969Btn = document.getElementById('year-1969-btn');
+const year1968Btn = document.getElementById('year-1968-btn');
 const dadJokesBtn = document.getElementById('dad-jokes-btn');
 
 // Utility functions
@@ -139,13 +139,13 @@ function showGolfFact() {
     setTimeout(() => golfFactsBtn.classList.remove('pulse'), 600);
 }
 
-function show1969Fact() {
-    const fact = getRandomItem(YEAR_1969_FACTS);
-    displayFact(fact, "📅 1969 Fact");
+function show1968Fact() {
+    const fact = getRandomItem(YEAR_1968_FACTS);
+    displayFact(fact, "📅 1968 Fact");
     
     // Add visual feedback to button
-    year1969Btn.classList.add('pulse');
-    setTimeout(() => year1969Btn.classList.remove('pulse'), 600);
+    year1968Btn.classList.add('pulse');
+    setTimeout(() => year1968Btn.classList.remove('pulse'), 600);
 }
 
 function showDadJoke() {
@@ -171,7 +171,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Button event listeners
     golfFactsBtn.addEventListener('click', showGolfFact);
-    year1969Btn.addEventListener('click', show1969Fact);
+    year1968Btn.addEventListener('click', show1968Fact);
     dadJokesBtn.addEventListener('click', showDadJoke);
     
     // Add smooth scrolling for better navigation
