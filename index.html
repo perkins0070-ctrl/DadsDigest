@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Dad! | August 7th Edition</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>The Birthday Brew</h1>
+                <p class="tagline">A Special Edition for Dad</p>
+            </div>
+            <div class="date-badge">
+                <span id="current-date"></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <div class="hero-content">
+                    <h2 class="hero-title">🎉 Happy Birthday, Dad!</h2>
+                    <p class="hero-subtitle">Celebrating another year of wisdom, golf games, and dad jokes</p>
+                    <div class="birthday-info">
+                        <div class="birthday-date">
+                            <span class="label">Born:</span>
+                            <span class="value">August 7th, 1969</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Live Metrics Section -->
+            <section class="metrics-section">
+                <h3 class="section-title">📊 By The Numbers</h3>
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="metric-number" id="years-lived">0</div>
+                        <div class="metric-label">Years of Awesomeness</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-number" id="days-lived">0</div>
+                        <div class="metric-label">Days on Earth</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-number" id="hours-lived">0</div>
+                        <div class="metric-label">Hours of Life</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-number" id="minutes-lived">0</div>
+                        <div class="metric-label">Minutes of Memories</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Market Watch & Weather Section -->
+            <section class="market-weather-section">
+                <div class="section-split">
+                    <!-- Stock Tickers -->
+                    <div class="market-section">
+                        <h3 class="section-title">📈 Market Watch</h3>
+                        <div class="ticker-grid">
+                            <div class="ticker-item up">
+                                <div class="ticker-symbol">DAD</div>
+                                <div class="ticker-price">$99.90</div>
+                                <div class="ticker-change">↑ 99.9%</div>
+                                <div class="ticker-desc">Birthday energy skyrocketing</div>
+                            </div>
+                            <div class="ticker-item down">
+                                <div class="ticker-symbol">CAKE</div>
+                                <div class="ticker-price">$8.50</div>
+                                <div class="ticker-change">↓ 15%</div>
+                                <div class="ticker-desc">Disappearing rapidly</div>
+                            </div>
+                            <div class="ticker-item up">
+                                <div class="ticker-symbol">NAP</div>
+                                <div class="ticker-price">$17.20</div>
+                                <div class="ticker-change">↑ 72%</div>
+                                <div class="ticker-desc">Mid-afternoon slumps expected</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Weather Widget -->
+                    <div class="weather-section">
+                        <h3 class="section-title">🌤️ Weather</h3>
+                        <div class="weather-widget">
+                            <div class="weather-location">Miller Place, NY</div>
+                            <div class="weather-current" id="weather-temp">Loading...</div>
+                            <div class="weather-desc" id="weather-desc">Fetching weather...</div>
+                            <div class="weather-details">
+                                <div class="weather-detail">
+                                    <span class="weather-label">Feels like:</span>
+                                    <span id="weather-feels">--°</span>
+                                </div>
+                                <div class="weather-detail">
+                                    <span class="weather-label">Humidity:</span>
+                                    <span id="weather-humidity">--%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Fake News Section -->
+            <section class="news-section">
+                <h3 class="section-title">📰 Today's Headlines</h3>
+                <p class="section-subtitle">Breaking news from around the world</p>
+                
+                <div class="news-grid">
+                    <article class="news-item">
+                        <div class="news-badge">BREAKING</div>
+                        <h4 class="news-headline">Trump declares everyone must eat ground beef 3x a day</h4>
+                        <p class="news-excerpt">In a surprising executive order, the former president announced a new dietary mandate that has nutritionists scratching their heads...</p>
+                        <div class="news-meta">2 hours ago • Politics</div>
+                    </article>
+                    
+                    <article class="news-item">
+                        <div class="news-badge">SCIENCE</div>
+                        <h4 class="news-headline">Local Fisherman Aidan Perkins discovers world's tiniest penis on a fish</h4>
+                        <p class="news-excerpt">Marine biologists are baffled by this unprecedented discovery that's making waves in the scientific community...</p>
+                        <div class="news-meta">4 hours ago • Science</div>
+                    </article>
+                    
+                    <article class="news-item">
+                        <div class="news-badge">CRIME</div>
+                        <h4 class="news-headline">Local Sea Shell collector Gillian Perkins arrested for environmental impact of hoarding sea shells</h4>
+                        <p class="news-excerpt">Environmental authorities cracked down on what they're calling "the most extensive shell collection operation in coastal history..."</p>
+                        <div class="news-meta">6 hours ago • Environment</div>
+                    </article>
+                    
+                    <article class="news-item">
+                        <div class="news-badge">MONEY</div>
+                        <h4 class="news-headline">Local Lady, Keli Perkins declares bankruptcy after hosting world's best engagement party for Jack & Diana</h4>
+                        <p class="news-excerpt">What started as a celebration of love became a cautionary tale about party planning budgets gone wild...</p>
+                        <div class="news-meta">8 hours ago • Finance</div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Interactive Buttons Section -->
+            <section class="interactive-section">
+                <h3 class="section-title">🎮 Dad's Fun Zone</h3>
+                <div class="button-grid">
+                    <button class="fun-button" id="golf-facts-btn">
+                        <span class="button-icon">⛳</span>
+                        <span class="button-text">Golf Facts</span>
+                    </button>
+                    <button class="fun-button" id="year-1969-btn">
+                        <span class="button-icon">📅</span>
+                        <span class="button-text">1969 Facts</span>
+                    </button>
+                    <button class="fun-button" id="dad-jokes-btn">
+                        <span class="button-icon">😂</span>
+                        <span class="button-text">Dad Jokes</span>
+                    </button>
+                </div>
+                <div class="fact-display" id="fact-display">
+                    <p>Click any button above to get started!</p>
+                </div>
+            </section>
+
+            <!-- Family Photos Section -->
+            <section class="photos-section">
+                <h3 class="section-title">📸 Family Adventures</h3>
+                <p class="section-subtitle">Memories from our amazing vacations together</p>
+                
+                <div class="photo-gallery">
+                    <div class="photo-row">
+                        <div class="photo-item">
+                            <img src="family-01.JPG" alt="Family Memory" class="family-photo">
+                        </div>
+                        <div class="photo-item">
+                            <img src="family-02.JPG" alt="Family Memory" class="family-photo">
+                        </div>
+                    </div>
+                    
+                    <div class="photo-row">
+                        <div class="photo-item">
+                            <img src="family-03.JPG" alt="Family Memory" class="family-photo">
+                        </div>
+                        <div class="photo-item">
+                            <img src="family-04.JPG" alt="Family Memory" class="family-photo">
+                        </div>
+                    </div>
+
+                    <div class="photo-row">
+                        <div class="photo-item">
+                            <img src="family-05.JPG" alt="Family Memory" class="family-photo">
+                        </div>
+                        <div class="photo-item">
+                            <img src="family-06.JPG" alt="Family Memory" class="family-photo">
+                        </div>
+                    </div>
+
+                    <div class="photo-row">
+                        <div class="photo-item">
+                            <img src="family-07.JPG" alt="Family Memory" class="family-photo">
+                        </div>
+                        <div class="photo-item">
+                            <img src="family-08.JPG" alt="Family Memory" class="family-photo">
+                        </div>
+                    </div>
+
+                    <div class="photo-row">
+                        <div class="photo-item">
+                            <img src="family-09.JPG" alt="Family Memory" class="family-photo">
+                        </div>
+                        <div class="photo-item">
+                            <img src="family-10.JPG" alt="Family Memory" class="family-photo">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Birthday Message Section -->
+            <section class="message-section">
+                <h3 class="section-title">💝 Special Birthday Message</h3>
+                <div class="message-card">
+                    <p>Dad, another year means another year of your incredible wisdom, your terrible golf jokes that somehow make us all laugh, and your unwavering support for our family. From teaching us life lessons to showing us how to appreciate the small moments, you've been our rock and our guide.</p>
+                    <p>Here's to celebrating not just your birthday, but all the amazing memories we've created together and all the adventures still to come. We love you more than words can express!</p>
+                    <p class="signature">Happy Birthday! 🎂</p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Sponsor Section -->
+    <section class="sponsor-section">
+        <div class="container">
+            <div class="sponsor-content">
+                <div class="sponsor-text">
+                    <span class="sponsor-label">Today's newsletter is brought to you by</span>
+                    <span class="sponsor-name">Dad's Money™</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 The Birthday Brew - A Special Edition for Dad's Big Day</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
